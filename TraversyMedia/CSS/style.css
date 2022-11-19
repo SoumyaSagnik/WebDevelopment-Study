@@ -1,0 +1,207 @@
+body {
+    background-color: #f4f4f4;
+    color: #555;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    /* font: normal 20px Arial, Helvetica, sans-serif;  One liner for above*/
+    line-height: 1.2em;
+}
+
+.box-1{
+    background-color: aquamarine;
+    border: 2px solid black;
+    border-bottom-width: 10px;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+.box-1 h1{
+    color: orangered;
+    font-style: italic;
+    text-decoration: overline blue;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    word-spacing: 0.5em;
+}
+
+.box-2{
+    margin-top: 3%;
+    border: 1px dotted goldenrod;
+    padding: 1%;
+}
+
+.categories a{
+    text-decoration: none;
+    color: black;
+}
+
+.categories a:hover{
+    color: palevioletred;
+}
+
+.categories a:active{
+    color: red;
+}
+
+.categories li{
+    list-style: none;
+    padding-bottom: 1%;
+    border-bottom: 2px solid black;
+    margin-top: 1%;
+    list-style-image: url(Rocket\ Img.png);
+}
+
+.categories :nth-child(5){
+    margin-bottom: 2%;
+}
+
+.categories {
+    margin-top: 2%;
+    border: 3px solid steelblue;
+    padding: 1%;
+    border-radius: 15px;
+}
+
+.categories h1{
+    text-align: center;
+}
+
+.form label{
+    display: block;
+    margin-top: 1.5%;
+}
+
+button{
+    margin-top: 1.5%;
+    background-color: black;
+    border: none;
+    color: whitesmoke;
+    padding: 7px 15px;
+    font-size: 0.8em;
+}
+
+.form input[type='text'], input[type='email'], textarea{
+    width: 70%;
+    padding: 1%;
+}
+
+button:hover{
+    background: red;
+    cursor: pointer;
+    color: black;
+}
+
+.block{
+    margin-top: 1.5%;
+    line-height: 16px;
+    font-size: 16px;
+    width: 33.3%;
+    float: left;
+    padding: 1%;
+    box-sizing: border-box;
+    border: 2px solid salmon;
+    margin-bottom: 2%;
+}
+
+.block:hover{
+    background: black;
+    color: white;
+}
+
+.clr{
+    clear: both;
+}
+
+#mainbar {
+    float: left;
+    width: 70%;
+    border: 2px solid orchid;
+    box-sizing: border-box;
+    padding: 3px;
+}
+
+#sidebar {
+    float: right;
+    width: 30%;
+    background: black;
+    color: burlywood;
+    font-weight: bold;
+    box-sizing: border-box;
+    padding-left: 3px;
+    padding-right: 3px;
+    border: 2px solid burlywood;
+    font-size: 1.2rem;
+}
+
+.p-box{
+    margin-top: 2%;
+    width: 100%;
+    height: 40%;
+    border: 2px solid black;
+    position: relative;
+    background-image: url('https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?cs=srgb&dl=pexels-pixabay-531880.jpg&fm=jpg');
+    background-position: 100% 40%;
+    background-position: center;
+}
+
+.p-box h1{
+    position: absolute;
+    top: 50%;
+}
+
+.p-box h2{
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+}
+
+.fixed button{
+    position: fixed;
+    top: 20%;
+    margin: 0;
+    font-weight: bolder;
+    box-sizing: border-box;
+}
+
+.fixed button:hover{
+    font-weight: bolder;
+}
+
+.fixed a{
+    color: wheat;
+    text-decoration: none;
+}
+
+.fixed a:hover{
+    color: black;
+}
+
+.list li:first-child{
+    background: goldenrod;
+}
+
+.list li:last-child{
+    background-color: steelblue;
+}
+
+.list li:nth-child(5) {
+    background: mistyrose;
+}
+
+.list li:nth-child(even) {
+    list-style: circle;
+}
+
+.list li:nth-child(odd) {
+    list-style: square;
+}
+
+/*
+min-height: for growing background  along with text, making it responsive.
+*/
