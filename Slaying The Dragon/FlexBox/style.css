@@ -1,0 +1,109 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+.item {
+    background-color: yellowgreen;
+    width: 15%;
+    padding-bottom: 10%;
+    text-align: center;
+    padding-top: 2%;
+    border: 7px solid seagreen;
+    border-radius: 7px;
+    max-height: 57.5px;
+    max-width: 150px;
+}
+
+.container {
+    width: 70%;
+    margin: auto;
+    border: 5px solid black;
+    height: 70%;
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: space-around;
+    gap: 1.6em;
+
+}
+
+.container2 {
+    width: 70%;
+    margin: auto;
+    border: 5px solid black;
+    height: 70%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.item2 {
+    background-color: yellowgreen;
+    width: 15%;
+    padding-bottom: 10%;
+    text-align: center;
+    padding-top: 2%;
+    border: 7px solid seagreen;
+    border-radius: 7px;
+    min-height: 100px;
+    max-height: 100px;
+    justify-content: space-between;
+}
+
+#box3 {
+    /* flex-grow: 1; */
+    align-self: center;
+}
+
+#box1 {
+    /* flex-shrink: 0; */
+}
+
+#box2 {
+    align-self: flex-end;
+}
+
+#box4 {
+    align-self: flex-end;
+}
+
+
+
+
+
+
+/*
+align-items: baseline;  it'll align items based on text inside item
+
+justify-content will align content on the main axis which is row by default.
+
+we can change that by flex-direction: column;
+
+justify-content will still align items based on main axis which has now been changed to column.
+
+align-items will align items based on the cross axis
+
+flex-wrap: by default it is set to nowrap meaning all items in single row/ column depending upon the main axis
+flex-wrap: wrap; By doing this our items will no longer try to fit in one row/ column
+
+When flex-wrap: wrap, then a new property is unlocked: align-content
+align-content works when we have flex-wrap set to wrap and we have items wrapping
+it's basically align items but all items as a whole(content).
+
+flex-shrink : item having this will shrink faster than other items.
+flex-shrink:0 ti make item unshrinkable.
+
+flex-basis: to override the dimensions of an item
+
+flex: 1 2 200px; 1st: grow, 2nd: shrink, 3rd: basis.
+
+align-self: overwrite alignment at container lever on item level.
+
+order: -1 will put element at first position irrespective of what's in html.
+order: 1 will put element at the last position
+order: 0 is default and all elements are at this position, displayed in what order html is written
+
+
+*/
