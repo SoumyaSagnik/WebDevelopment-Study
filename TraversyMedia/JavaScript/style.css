@@ -1,0 +1,53 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    /* display: flex;
+    justify-content: center; */
+}
+
+#heading{
+    background: #F3F2F3;
+    text-align: center;
+    padding: 2% 1%;
+}
+
+label{
+    display: block;
+}
+
+form{
+    margin-top: 5%;
+    background: #F3F2F3;
+    padding: 3%;
+    min-width: 25%;
+    font-size: 1.6em;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.submit{
+    margin-top: 10%;
+    border: 2px solid orange;
+    font-size: 0.8em;
+    background: firebrick;
+    padding: 3%;
+    border-radius: 5px;
+}
+
+.msg{
+    background-color: red;
+    color: white;
+}
+
+.error{
+    background-color: red;
+    color: white;
+}
