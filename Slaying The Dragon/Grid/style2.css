@@ -1,0 +1,153 @@
+/* .container {
+    display: grid;
+    grid-template-columns: repeat(6, 100px);
+    grid-template-rows: repeat(6, 100px);
+    grid-auto-flow: column;
+    grid-auto-columns: 100px;
+    grid-auto-rows: 100px; 
+} */
+
+/* .item-1 {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 7;
+} */
+
+/* .item-3 {
+    grid-row: 3 / -1;
+    grid-column: 2 / 5;
+    OR
+    grid-area: row-start col-start row-end col-end;
+
+    grid-area: 3/ 1/ -1/ -1;
+} */
+
+/* .item-2 {
+    grid-row: span 2;
+    grid-column: span 2;
+
+    grid-area: 2/4/4/6;
+    z-index: 1;
+    box-shadow: 0 0 2em #F3F2F3;
+} */
+
+/* --------------------------------------------------------------------- */
+
+/* .container {
+    display: grid;
+    grid-template-rows: 100px 300px 100px;
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas:
+    'header header'
+    'main aside'
+    'footer footer';
+}
+
+.item-1 {
+    grid-area: header;
+}
+
+.item-2 {
+    grid-area: main;
+}
+
+.item-3 {
+    grid-area: aside;
+}
+
+.item-4 {
+    grid-area: footer;
+} */
+
+/*
+adding 2 values in grid-template-areas columnwise as we know it has 2 columns. Same is the case for rows.
+*/
+
+/* ----------------------------------------------------------------- */
+
+/* .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 100px);
+    justify-items: start;
+    align-items: end;
+} */
+
+/* .item-1 {
+    justify-self: center;
+    align-self: stretch;
+} */
+
+/* ---------------------------------------------------------------------- */
+
+/* When we have container bigger than the grid items, we can use justify-content and align-content
+justify-content: row axis
+align-content: column axis
+*/
+
+/* .container {
+    display: grid;
+    height: 600px;
+    grid-template-columns: repeat(2, 100px);
+    grid-template-rows: repeat(2, 100px);
+    justify-content: space-evenly;
+    align-content: space-evenly;
+} */
+
+
+/* --------------------------------------------------------------------- */
+
+/* Responsive grid without media queries */
+
+.container {
+    display: grid;
+    grid-template-rows: repeat(4, 100px);
+    /* grid-template-columns: repeat(4, minmax(100px, 1fr)); */
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+using span means wherever it'll get position it'll fit that size from there onwards. It's great to have when you're not sure where your element  will be positioned at but you're sure about it's size.
+
+If there's no more space and we add an item in html, by default an item will be added at the end of last row.
+When items are added outside of the explicitly defined grid, they're called implicit grid.
+The implicit grid doesn't inherit the values that we've set in the grid-template-rows and grid-template-columns.
+
+To assign dimensions to implicit grid:
+if row implicit grid
+grid-auto-rows: 100px;
+if column implicit grid
+grid-auto-column: 100px;
+
+grid-auto-flow: column --> implicit grid will be added at the end of column instead of row.
+
+fr will stretch the items according to the available space
+*/
