@@ -113,29 +113,9 @@ align-content: column axis
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*
-using span means wherever it'll get position it'll fit that size from there onwards. It's great to have when you're not sure where your element  will be positioned at but you're sure about it's size.
+using span means wherever it'll get position it'll fit that size from there onwards.
+It's great to have when you're not sure where your element  will be positioned at but you're sure about it's size.
 
 If there's no more space and we add an item in html, by default an item will be added at the end of last row.
 When items are added outside of the explicitly defined grid, they're called implicit grid.
