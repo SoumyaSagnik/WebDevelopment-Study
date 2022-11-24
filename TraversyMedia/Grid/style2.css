@@ -1,0 +1,34 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.wrapper > div {
+    background: #eee;
+    padding: 1em;
+}
+
+.wrapper > div:nth-child(odd) {
+    background: #ddd;
+}
+
+.wrapper {
+    display: grid;
+    /* grid-template-columns: repeat(2, 1fr 2fr);  nested */
+    grid-template-columns: repeat(3, 1fr); 
+    gap:  1em;
+    /* grid-auto-rows: 100px; each row 100px */
+    grid-auto-rows: minmax(100px, auto); /* min 100px max auto */
+}
+
+.nested {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 1fr;
+    gap: 1em
+}
+
+.nested > div{
+    border: 1px solid #333;
+    padding: 0.5em;
+    text-align: center;
+}
