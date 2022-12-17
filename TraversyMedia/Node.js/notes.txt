@@ -1,0 +1,35 @@
+Node Js
+
+JavaScript Runtime (Not a language or a framework)
+Built on V8 JavaScript engine
+Written in C++
+Essentially allows us to run JavaScript code on the server.
+
+Works on a single thread using non-blocking I/O calls
+It is asynchronous.
+
+Single threaded
+Supports concurrency via events and callbacks
+EventEmitter class is used to bind events and listeners.
+
+Node is not good for cpu intensive tasks like long calculations.
+
+Packages get stored in the "node_modules" folder
+All dependencies are listed in a "package.json" file
+NPM scripts can be created to run certain tasks such as run a server
+
+npm init                  Generates a package.json file
+npm install express       Installs a package locally
+npm install -g nodemon    Installs a package globally
+
+If you move to a different computer where all dependecies used in your project are not present use command: npm install uuid
+This will install the dependency uuid
+
+For adding dev dependencies use -D
+Eg: npm install -D nodemon
+
+if you want to install everything in package.json automatically then use command: npm install.
+This will create node modules(if you don't have) and place everything inside it.
+
+If you wanna run the js file simply type node index.js in terminal
+Here index.js is the filename.
