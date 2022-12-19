@@ -1,0 +1,2 @@
+Axios returns a promise.
+So you can ues the .then or async await. Here using .then
