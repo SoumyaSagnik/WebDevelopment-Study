@@ -1,0 +1,22 @@
+{
+  "tasks": [
+    {
+      "id": 2,
+      "text": "Meeting at school",
+      "day": "Dec 10 2020",
+      "reminder": true
+    },
+    {
+      "id": 3,
+      "text": "Food shopping",
+      "day": "Dec 9 2020",
+      "reminder": false
+    },
+    {
+      "text": "Brad Traversy is GOD",
+      "day": "everywhere and anytime",
+      "reminder": false,
+      "id": 4
+    }
+  ]
+}
