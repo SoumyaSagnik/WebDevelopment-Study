@@ -217,3 +217,46 @@ const numCreation = (n) =>
     .map((_, index) => index + 1);
 console.log(numCreation(5)); // for n = 5, [1, 2, 3, 4, 5]
 // 2nd argument of the callback provided to the map function is index.
+
+console.log("----------------------------------------");
+
+//slice
+// returns a shallow copy of a portion of an array. It doesn't modify the original array.
+
+//! Return all elements except the first and last array element.
+const n = [1, 2, 3, 4, 5, 9];
+
+const exceptFirstAndLast = n.slice(1, n.length - 1);
+console.log(exceptFirstAndLast); // [2, 3, 4, 5]
+
+console.log("----------------------------------------");
+
+//! last 3 items in an array.
+const last3 = n.slice(-3);
+console.log(last3);
+
+console.log("----------------------------------------");
+
+// splice
+// changes an array by removing or replacing existing elements from an array. It changes the array and returns an array with the removed items.
+
+//! remove last 3 elements in an array.
+// [1, 2, 3, 4, 5, 9]
+const removeLast3 = n.splice(-3);
+console.log(removeLast3); // [4, 5, 9]
+console.log(n); // [1, 2, 3]
+
+console.log("----------------------------------------");
+
+// ! remove last 2 items and fill them with zero in the original array
+const n1 = [1, 2, 3, 4, 5];
+const result = n1.splice(n1.length - 2, n1.length, 0, 0);
+console.log(result); // [4, 5]
+console.log(n1); // [1, 2, 3, 0, 0]
+
+//! insert 2 numbers (0, 1) after 3rd index in an array
+const n2 = [1, 2, 3, 4, 5];
+const result2 = n2.splice(3, 0, 0, 1);
+// 3--> starting index, 0 means no remove we add, 0,1 nos to be added
+console.log(result2); // []
+console.log(n2); // [1, 2, 3, 0, 1, 4, 5]
