@@ -92,7 +92,7 @@ console.log("----------------------------------------");
 // reduce
 // ! Add all of the ages in ages array and return sum.
 const ageSum = ages.reduce((total, age) => total + age, 0);
-// 0 here signifies initial value of total (default value is also zero so it can be omitted here)
+// 0 here signifies initial value of total.
 console.log(ageSum);
 
 console.log("----------------------------------------");
@@ -146,7 +146,7 @@ console.log(financeC); // true
 
 console.log("----------------------------------------");
 
-// false
+// every
 // it returns true or false on whether all the elements of an array match a given condition.
 
 // ! All companies name has the word 'Company'
@@ -190,7 +190,7 @@ console.log(movieGroup);
 console.log("----------------------------------------");
 
 // fill
-// changes all teh elments in the array with the provided value. It modifies the array and returns the modified array.
+// changes all the elments in the array with the provided value. It modifies the array and returns the modified array.
 
 const agesZero = ages.fill(0);
 console.log(agesZero);
@@ -260,3 +260,78 @@ const result2 = n2.splice(3, 0, 0, 1);
 // 3--> starting index, 0 means no remove we add, 0,1 nos to be added
 console.log(result2); // []
 console.log(n2); // [1, 2, 3, 0, 1, 4, 5]
+
+console.log("----------------------------------------");
+
+//push
+// adds an element to the end of an array.
+// ! add 8 to the end of an array
+const n3 = [1, 2];
+n3.push(8);
+console.log(n3); // [1, 2, 8]
+
+console.log("----------------------------------------");
+
+//pop
+//removes the last element from an array.
+const n4 = [1, 2, 3];
+n4.pop();
+console.log(n4); // [1, 2]
+
+console.log("----------------------------------------");
+
+//shift
+// removes the first element from an array
+const n5 = [1, 2, 3];
+n5.shift();
+console.log(n5); // [2, 3]
+
+console.log("----------------------------------------");
+
+//unshift
+// adds an element to the beginning of an array
+const n6 = [1, 2, 3];
+n6.unshift(0);
+console.log(n6); // [0, 1, 2, 3]
+
+console.log("----------------------------------------");
+
+//concat
+// combines two or more arrays and returns a new array.
+const a1 = [1, 2];
+const a2 = [3, 4];
+const a = a1.concat(a2);
+console.log(a);
+
+console.log("----------------------------------------");
+
+//join
+// returns array as string with specified delimiter. Default delimiter: comma
+const j1 = [1, 2];
+const j = j1.join();
+console.log(j); // 1,2
+
+console.log("----------------------------------------");
+
+const j2 = [1, 2];
+const jj = j2.join(" and ");
+console.log(jj); // 1 and 2
+
+console.log("----------------------------------------");
+
+const n7 = [1, 2, 3];
+const n8 = n7.reverse();
+console.log(n7);
+console.log(n8);
+
+console.log("----------------------------------------");
+
+const x = [1, 2, 3];
+const y = [1, 2, 3, 4, 5];
+
+const r1 = x.splice(2, 0, 4);
+const r2 = y.splice(1, 2);
+console.log(r1);
+console.log(r2);
+console.log(x);
+console.log(y);
